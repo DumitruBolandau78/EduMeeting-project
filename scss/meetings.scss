@@ -1,0 +1,153 @@
+@import '../scss/variables.scss';
+@import '../scss/card.scss';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 80%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../images/meetings-page-bg.jpg');
+    background-attachment: fixed;
+    height: 100%;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.description-of-page-wrapper {
+    background-image: url('../images/heading-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    &-inner {
+        max-width: 1180px;
+        width: 100%;
+        margin: 0 10px;
+        font-weight: 900;
+        color: white;
+        text-align: center;
+        padding: 220px 0 160px 0;
+    }   
+}
+
+.description-of-page-subtitle {
+    font-size: 18px;
+}
+
+.description-of-page-title {
+    font-size: 40px;
+    margin-top: 20px;
+}
+
+.all-meetings-wrapper {
+    max-width: 1180px;
+    width: 100%;
+    margin: 0 10px;
+}
+
+.all-meetings-category-choose {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 120px;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    button {
+        margin: 0 5px;
+        padding: 10px 25px;
+        font-size: 14px;
+        font-weight: bold;
+        border-radius: 20px;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        text-transform: uppercase;
+        color: $color;
+        transition: .4s;
+
+        &:hover {
+            background-color: $color;
+            color: #fff;
+        }
+    }
+}
+
+.all-meetings-cards-wrapper {
+    margin-top: 50px;
+    display: grid;
+    grid-gap: 25px;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: flex-start;
+    justify-items: center;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.all-meetings-pagination {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+    margin-top: 40px;
+
+    .all-meetings-pagination-btn-previous button:hover {
+        background-color: rgba(239, 239, 239, 0.3);
+    }
+
+    .all-meetings-pagination-btn-first button{
+        background-color: $color;
+    }
+
+    button {
+        width: 40px;
+        height: 40px;
+        border-radius: 5px;
+        margin: 3px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 17px;
+        font-weight: bold;
+        transition: .5s;
+        cursor: pointer;
+        border: none;
+        outline: none;
+
+        &:hover {
+            background-color: $color;
+        }
+    }
+}
+
+.footer {
+    text-align: center;
+    color: white;
+    font-size: 17px;
+}
+
+.hr {
+    width: 100%;
+    margin-bottom: 40px;
+}

@@ -1,0 +1,29 @@
+@media (max-width: 832px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-logo {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 807px) {
+    .all-meetings-cards-wrapper {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+@media (max-width: 600px) {
+    .header-navigation {
+        display: none;
+    }
+
+    .all-meetings-cards-wrapper {
+        grid-template-columns: 1fr;
+    }
+}

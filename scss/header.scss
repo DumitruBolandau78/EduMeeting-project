@@ -1,0 +1,146 @@
+@import '../scss/variables.scss';
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 80%;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-image: url('../images/meetings-page-bg.jpg');
+    background-attachment: fixed;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+.header {
+    width: 100%;
+    background-color: rgba(196, 196, 196, 0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.header-inner {
+    max-width: 1180px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 10px;
+    white-space: nowrap;
+
+    ul {
+        display: flex;
+        list-style: none;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        margin: 0 15px;
+        position: relative;
+    }
+
+    a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: .4s;
+
+        &:hover {
+            color: $color-orange;
+        }
+
+        i {
+            margin-left: 2px;
+        }
+    }
+}
+
+.li-hover {
+    display: flex;
+    flex-direction: column;
+
+    .drop-items {
+        display: none;
+    
+        li {
+            margin: 0;
+            padding: 0;
+        }
+    }
+
+    &:hover .drop-items {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        background-color: #fff;
+        
+        li {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                padding: 10px 25px;
+                color: black;
+                font-size: 13px;
+                font-weight: normal;
+
+                &:hover {
+                    transform: translateX(5px);
+                    color: $color-orange;
+                }
+            }
+        }
+    }
+
+    ul {
+        align-items: flex-start;
+
+        li {
+            margin-top: 15px;
+        }
+    }
+}
+
+.header-navigation {
+    display: flex;
+    align-items: center;
+}
+
+.header-logo {
+    font-size: 30px;
+    font-weight: 900;
+    text-transform: uppercase;
+    color: white;
+}
+
+@media (max-width: 832px) {
+    .header-inner {
+        flex-direction: column;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-logo {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .header-navigation {
+        display: none;
+    }
+}

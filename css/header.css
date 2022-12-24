@@ -1,0 +1,111 @@
+.header {
+  width: 100%;
+  background-color: rgba(196, 196, 196, 0.3);
+  display: flex;
+  justify-content: center;
+}
+
+.header-inner {
+  max-width: 1180px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 10px;
+  white-space: nowrap;
+}
+.header-inner ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+.header-inner li {
+  margin: 0 15px;
+  position: relative;
+}
+.header-inner a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: .4s;
+}
+.header-inner a:hover {
+  color: #fd7e14;
+}
+.header-inner a i {
+  margin-left: 2px;
+}
+
+.li-hover {
+  display: flex;
+  flex-direction: column;
+}
+.li-hover .drop-items {
+  display: none;
+}
+.li-hover .drop-items li {
+  margin: 0;
+  padding: 0;
+}
+.li-hover:hover .drop-items {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 100%;
+  background-color: #fff;
+}
+.li-hover:hover .drop-items li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.li-hover:hover .drop-items li a {
+  padding: 10px 25px;
+  color: black;
+  font-size: 13px;
+  font-weight: normal;
+}
+.li-hover:hover .drop-items li a:hover {
+  transform: translateX(5px);
+  color: #fd7e14;
+}
+.li-hover ul {
+  align-items: flex-start;
+}
+.li-hover ul li {
+  margin-top: 15px;
+}
+
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.header-logo {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: white;
+}
+
+@media (max-width: 832px) {
+  .header-inner {
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .header-logo {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .header-navigation {
+    display: none;
+  }
+}

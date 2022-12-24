@@ -1,0 +1,122 @@
+.upcoming-meetings-body-meetings-category-item1,
+.upcoming-meetings-body-meetings-category-item4 {
+  align-self: flex-start;
+}
+
+.upcoming-meetings-body-meetings-category {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 25px;
+}
+
+.upcoming-meetings-body-meetings-category-item1,
+.upcoming-meetings-body-meetings-category-item2,
+.upcoming-meetings-body-meetings-category-item3,
+.upcoming-meetings-body-meetings-category-item4 {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: black;
+  width: 100%;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg1 {
+  background-image: url("../images/meeting-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg2 {
+  background-image: url("../images/meeting-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg3 {
+  background-image: url("../images/meeting-03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg4 {
+  background-image: url("../images/meeting-04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-wrapper1,
+.upcoming-meetings-body-meetings-category-item-body-wrapper2,
+.upcoming-meetings-body-meetings-category-item-body-wrapper3,
+.upcoming-meetings-body-meetings-category-item-body-wrapper4 {
+  padding: 30px;
+}
+
+.price {
+  background-color: whitesmoke;
+  display: inline;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-wrapper1,
+.upcoming-meetings-body-meetings-category-item-body-wrapper4 {
+  display: flex;
+  gap: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-month-and-date1,
+.upcoming-meetings-body-meetings-category-item-body-month-and-date4 {
+  text-align: center;
+}
+
+.month {
+  color: #a12c2f;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-title1 a,
+.upcoming-meetings-body-meetings-category-item-body-title2 a,
+.upcoming-meetings-body-meetings-category-item-body-title3 a,
+.upcoming-meetings-body-meetings-category-item-body-title4 a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-description1,
+.upcoming-meetings-body-meetings-category-item-body-description2,
+.upcoming-meetings-body-meetings-category-item-body-description3,
+.upcoming-meetings-body-meetings-category-item-body-description4 {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 25px;
+}

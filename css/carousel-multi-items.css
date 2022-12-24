@@ -1,0 +1,72 @@
+.MultiCarousel {  overflow: hidden; padding: 15px; width: 95%; position:relative;}
+    .MultiCarousel .MultiCarousel-inner { transition: 1s ease all; float: left; overflow: hidden;}
+        .MultiCarousel .MultiCarousel-inner .item { float: left;}
+        .MultiCarousel .MultiCarousel-inner .item > div { text-align: center; margin:10px; background:#fff; color:#666;}
+    .MultiCarousel .leftLst, .MultiCarousel .rightLst { position:absolute; border-radius:50%;top:calc(50% - 20px); }
+    .MultiCarousel .leftLst { left:0; }
+    .MultiCarousel .rightLst { right:0; }
+    
+        .MultiCarousel .leftLst.over, .MultiCarousel .rightLst.over { pointer-events: none; background:#ccc; }
+
+.pad15 hr {
+    border-bottom: 1px solid gray;
+}
+    .bg1 {
+    background-image: url('../images/course-01.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+.bg2 {
+    background-image: url('../images/course-02.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+.bg3 {
+    background-image: url('../images/course-03.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+.bg4 {
+    background-image: url('../images/course-04.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 150px;
+}
+
+.title {
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+.item-stars-and-price {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.item-stars-and-price i{
+    color: rgb(255, 217, 0);
+}
+
+.item-price {
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}

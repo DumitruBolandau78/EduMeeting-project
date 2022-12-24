@@ -1,0 +1,79 @@
+@media (max-width: 827px){
+    .header-inner {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .header-logo {
+        margin-bottom: 10px;
+    }
+
+    .upcoming-meetings-body {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        justify-items: center;
+    }
+
+    .apply-wrapper-inner {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .about-university-wrapper-inner {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+
+    .contacts-wrapper  {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .contacts-form {
+        width: 97%;
+    }
+
+    .contacts-card {
+        max-width: 827px;
+        width: 97%;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 600px){
+    .upcoming-meetings-body-meetings-category {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+    }
+
+    .about-university-left-side-blocks {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4, auto);
+        gap: 10px;
+    }
+
+    .about-university-left-side-blocks:nth-child(2) {
+        margin-bottom: 40px;
+    }
+
+    .contacts-form-row {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+}
+
+@media (max-width: 354px){
+    .carousel-boot-wrapper {
+        position: relative;
+        top: 70px;
+    }
+}
+
+@media (max-width: 323px){
+    .about-university-left-side-blocks {
+        grid-template-columns: minmax(200px, 1fr);
+        grid-template-rows: repeat(4, auto);
+        gap: 10px;
+    }
+}

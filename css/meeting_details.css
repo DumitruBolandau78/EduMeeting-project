@@ -1,0 +1,321 @@
+.upcoming-meetings-body-meetings-category-item1,
+.upcoming-meetings-body-meetings-category-item4 {
+  align-self: flex-start;
+}
+
+.upcoming-meetings-body-meetings-category {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 25px;
+}
+
+.upcoming-meetings-body-meetings-category-item1,
+.upcoming-meetings-body-meetings-category-item2,
+.upcoming-meetings-body-meetings-category-item3,
+.upcoming-meetings-body-meetings-category-item4 {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: black;
+  width: 100%;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg1 {
+  background-image: url("../images/meeting-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg2 {
+  background-image: url("../images/meeting-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg3 {
+  background-image: url("../images/meeting-03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg4 {
+  background-image: url("../images/meeting-04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-wrapper1,
+.upcoming-meetings-body-meetings-category-item-body-wrapper2,
+.upcoming-meetings-body-meetings-category-item-body-wrapper3,
+.upcoming-meetings-body-meetings-category-item-body-wrapper4 {
+  padding: 30px;
+}
+
+.price {
+  background-color: whitesmoke;
+  display: inline;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-wrapper1,
+.upcoming-meetings-body-meetings-category-item-body-wrapper4 {
+  display: flex;
+  gap: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-month-and-date1,
+.upcoming-meetings-body-meetings-category-item-body-month-and-date4 {
+  text-align: center;
+}
+
+.month {
+  color: #a12c2f;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-title1 a,
+.upcoming-meetings-body-meetings-category-item-body-title2 a,
+.upcoming-meetings-body-meetings-category-item-body-title3 a,
+.upcoming-meetings-body-meetings-category-item-body-title4 a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-description1,
+.upcoming-meetings-body-meetings-category-item-body-description2,
+.upcoming-meetings-body-meetings-category-item-body-description3,
+.upcoming-meetings-body-meetings-category-item-body-description4 {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 80%;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../images/meetings-page-bg.jpg");
+  background-attachment: fixed;
+  height: 100%;
+  position: relative;
+  overflow-y: scroll;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.description-of-page-wrapper {
+  background-image: url("../images/heading-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 120px;
+}
+.description-of-page-wrapper-inner {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 10px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  padding: 220px 0 160px 0;
+}
+
+.description-of-page-subtitle {
+  font-size: 18px;
+}
+
+.description-of-page-title {
+  font-size: 40px;
+  margin-top: 20px;
+}
+
+.teaching-and-learning-tools-wrapper {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 10px;
+}
+
+.teaching-and-learning-tools-price-and-date {
+  background-image: url("../images/single-meeting.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 370px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  padding: 30px;
+  text-align: center;
+}
+
+.teaching-and-learning-tools-price-and-date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.teaching-and-learning-tools-price {
+  padding: 10px 20px;
+  background-color: #bebebe;
+  display: inline;
+  align-self: flex-start;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.teaching-and-learning-tools-date {
+  padding: 10px 20px;
+  background-color: #bebebe;
+  display: inline;
+  align-self: flex-start;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+}
+.teaching-and-learning-tools-date span {
+  color: #a12c2f;
+}
+
+.teaching-and-learning-tools-info-wrapper {
+  padding: 50px;
+  background-color: white;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+}
+
+.teaching-and-learning-tools-info-title {
+  font-size: 25px;
+  font-weight: 900;
+  margin-bottom: 20px;
+}
+
+.teaching-and-learning-tools-info-place {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.teaching-and-learning-tools-info-text1 {
+  font-size: 16px;
+  line-height: 25px;
+  margin-top: 30px;
+}
+
+.teaching-and-learning-tools-info-text2 {
+  font-size: 16px;
+  line-height: 25px;
+  margin-bottom: 30px;
+}
+
+.row {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.col-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 18px;
+}
+
+.col-text {
+  font-size: 16px;
+}
+
+.teaching-and-learning-tools-info-share span {
+  font-size: 20px;
+  font-weight: bold;
+}
+.teaching-and-learning-tools-info-share a {
+  text-decoration: none;
+  color: #1b1b1b;
+  font-size: 17px;
+  margin: 0 4px;
+  transition: .4s;
+}
+.teaching-and-learning-tools-info-share a:hover {
+  color: #dda601;
+}
+
+.teaching-and-learning-tools-btn {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 70px;
+}
+.teaching-and-learning-tools-btn a {
+  background-color: #a12c2f;
+  color: white;
+  text-decoration: none;
+  padding: 13px 40px;
+  border-radius: 25px;
+  font-size: 15px;
+  font-weight: bold;
+  transition: .5s;
+}
+.teaching-and-learning-tools-btn a:hover {
+  background-color: #832225;
+  color: white;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+.hr {
+  color: white;
+}

@@ -1,0 +1,676 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 80%;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-image: url("../images/meetings-page-bg.jpg");
+  background-attachment: fixed;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.welcome {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.welcome-inner {
+  padding-top: 150px;
+  width: 100%;
+  max-width: 1180px;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  filter: brightness(50%);
+}
+
+.welcome-subtitle {
+  font-size: 18px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.welcome-title {
+  font-size: 32px;
+  margin-bottom: 20px;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.welcome-desription {
+  font-size: 15.5px;
+  letter-spacing: .5px;
+  line-height: 27px;
+  margin-bottom: 20px;
+}
+.welcome-desription a {
+  text-decoration: none;
+  color: #49adff;
+  transition: .4s;
+}
+
+.welcome-btn {
+  margin-bottom: 20px;
+}
+.welcome-btn a {
+  background-color: #a12c2f;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 14px 30px;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: .4s;
+}
+.welcome-btn a:hover {
+  background-color: #832225;
+  color: white;
+}
+
+.carousel {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.carousel-boot-wrapper {
+  max-width: 1180px;
+  width: 100%;
+  padding: 0 10px;
+  transform: translateY(-120px);
+}
+
+.carousel-item-inner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.carousel-item-inner img {
+  max-width: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 700px;
+  width: 100%;
+  padding: 40px;
+  text-align: center;
+  background-image: url("../images/service-item-bg.jpg");
+  color: white;
+}
+.card-title {
+  margin-top: 10px;
+  font-size: 20px;
+}
+.card-text {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.upcoming-meetings-wrapper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 10px;
+  color: white;
+}
+
+.upcoming-meetings-title {
+  font-size: 23px;
+  display: grid;
+  place-items: center;
+}
+
+.upcoming-meetings-body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 60px;
+  color: white;
+  margin: 50px 10px 0 10px;
+}
+
+.upcoming-meetings-body-category-side {
+  background-color: #fff;
+  color: black;
+  padding: 40px;
+  line-height: 35px;
+  border-radius: 20px;
+  align-self: flex-start;
+}
+.upcoming-meetings-body-category-side-title {
+  font-size: 20px;
+  font-weight: bold;
+}
+.upcoming-meetings-body-category-side a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  transition: .4s;
+}
+.upcoming-meetings-body-category-side-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.upcoming-meetings-body-category-side-btn a {
+  padding: 5px 30px;
+  border: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #a12c2f;
+  font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: .4s;
+}
+.upcoming-meetings-body-category-side-btn a:hover {
+  background-color: #832225;
+  color: white;
+}
+
+.upcoming-meetings-body-meetings-category-item1,
+.upcoming-meetings-body-meetings-category-item4 {
+  align-self: flex-start;
+}
+
+.upcoming-meetings-body-meetings-category {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  grid-gap: 25px;
+}
+
+.upcoming-meetings-body-meetings-category-item1,
+.upcoming-meetings-body-meetings-category-item2,
+.upcoming-meetings-body-meetings-category-item3,
+.upcoming-meetings-body-meetings-category-item4 {
+  border-top-right-radius: 20px;
+  border-top-left-radius: 20px;
+  border-radius: 20px;
+  background-color: #fff;
+  color: black;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg1 {
+  background-image: url("../images/meeting-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg2 {
+  background-image: url("../images/meeting-02.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg3 {
+  background-image: url("../images/meeting-03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-price-and-bg4 {
+  background-image: url("../images/meeting-04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 200px;
+  padding: 20px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-wrapper1,
+.upcoming-meetings-body-meetings-category-item-body-wrapper2,
+.upcoming-meetings-body-meetings-category-item-body-wrapper3,
+.upcoming-meetings-body-meetings-category-item-body-wrapper4 {
+  padding: 30px;
+}
+
+.price {
+  background-color: whitesmoke;
+  display: inline;
+  padding: 10px 25px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: bold;
+  color: #2b2b2b;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-wrapper1,
+.upcoming-meetings-body-meetings-category-item-body-wrapper4 {
+  display: flex;
+  gap: 20px;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-month-and-date1,
+.upcoming-meetings-body-meetings-category-item-body-month-and-date4 {
+  text-align: center;
+}
+
+.month {
+  color: #a12c2f;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.date {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-title1 a,
+.upcoming-meetings-body-meetings-category-item-body-title2 a,
+.upcoming-meetings-body-meetings-category-item-body-title3 a,
+.upcoming-meetings-body-meetings-category-item-body-title4 a {
+  font-size: 18px;
+  font-weight: bold;
+  text-decoration: none;
+  color: black;
+  transition: .4s;
+}
+
+.upcoming-meetings-body-meetings-category-item-body-description1,
+.upcoming-meetings-body-meetings-category-item-body-description2,
+.upcoming-meetings-body-meetings-category-item-body-description3,
+.upcoming-meetings-body-meetings-category-item-body-description4 {
+  font-size: 14px;
+  margin-top: 10px;
+  line-height: 25px;
+}
+
+.apply-wrapper {
+  background-image: url("../images/apply-bg.jpg");
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 140px;
+  display: flex;
+  justify-content: center;
+  background-attachment: fixed;
+}
+.apply-wrapper-inner {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr .8fr;
+  grid-gap: 50px;
+  padding: 100px 0;
+}
+
+.apply-left-side-apply-for-bachelor-degree {
+  background-color: rgba(196, 196, 196, 0.3);
+  padding: 50px;
+  color: white;
+}
+.apply-left-side-apply-for-bachelor-degree:first-child {
+  margin-bottom: 30px;
+}
+.apply-left-side-apply-for-bachelor-degree button {
+  padding: 10px 30px;
+  border: none;
+  border-radius: 25px;
+  text-transform: uppercase;
+  color: white;
+  background-color: #a12c2f;
+  font-weight: bold;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: .4s;
+}
+.apply-left-side-apply-for-bachelor-degree button:hover {
+  background-color: #832225;
+}
+.apply-left-side-apply-for-bachelor-degree:last-child button {
+  background-color: #fd7e14;
+}
+.apply-left-side-apply-for-bachelor-degree:last-child button:hover {
+  background-color: #d1640c;
+}
+
+.apply-left-side-apply-for-bachelor-degree-title {
+  font-size: 23px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.apply-left-side-apply-for-bachelor-degree-text {
+  line-height: 25px;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.apply-right-side {
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 40px;
+  align-self: center;
+}
+
+.accordion-item button {
+  color: #2b2b2b;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff;
+  outline: none;
+  border: none;
+}
+
+.accordion-item button:focus {
+  color: #fd7e14;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #fff;
+}
+
+.accordion-item button:visited {
+  color: #2b2b2b;
+  background-color: #fff;
+}
+
+.accordion-body {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.our-popular-courses-wrapper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 10px;
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.our-popular-courses-wrapper hr {
+  color: white;
+}
+
+.our-popular-courses-wrapper-title {
+  font-size: 25px;
+  color: #fff;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.card1 {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0;
+  background-color: #fff;
+  color: black;
+  border-radius: 5px;
+}
+.card1 img {
+  width: 100%;
+  max-width: none;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.card-text {
+  padding: 20px;
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+}
+
+.card-body hr {
+  color: gray;
+}
+.card-body i {
+  color: #fd7e14;
+}
+
+.card-stars-and-price {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.card-price {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.carousel-item-inner {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-control-prev-icon {
+  position: relative;
+  right: 30px;
+}
+
+.carousel-control-next-icon {
+  position: relative;
+  left: 30px;
+}
+
+.about-university-wrapper {
+  width: 100%;
+  background-image: url("../images/facts-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 130px;
+  padding: 140px 0;
+  display: flex;
+  justify-content: center;
+}
+.about-university-wrapper-inner {
+  max-width: 1180px;
+  margin: 0 10px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+}
+
+.about-university-left-side-title {
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+.about-university-left-side-blocks {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 40px;
+  text-align: center;
+}
+
+.about-university-left-side-block {
+  background-color: rgba(196, 196, 196, 0.3);
+  border-radius: 15px;
+  padding: 30px;
+}
+.about-university-left-side-block:nth-child(2), .about-university-left-side-block:nth-child(4) {
+  transform: translateY(40px);
+}
+
+.about-university-left-side-block-title {
+  font-size: 20px;
+  color: #fff;
+  font-weight: bold;
+}
+
+.about-university-left-side-block-numbers {
+  font-weight: bold;
+  color: #fd7e14;
+  font-size: 30px;
+}
+
+.about-university-right-side-video {
+  align-self: center;
+  transform: translateY(20px);
+}
+.about-university-right-side-video img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about-university-right-side-video i {
+  font-size: 50px;
+  color: #fd7e14;
+}
+.about-university-right-side-video a {
+  position: relative;
+  text-align: center;
+}
+.about-university-right-side-video #play-video {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  transform: translateY(-50%);
+  transform: translateX(-50%);
+}
+
+.contacts-wrapper {
+  max-width: 1180px;
+  width: 100%;
+  margin: 0 10px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  align-items: center;
+}
+
+.contacts-form {
+  background-color: #fff;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+  margin: 0 10px;
+}
+.contacts-form textarea {
+  width: 100%;
+  resize: none;
+  border-radius: 15px;
+  padding: 10px;
+  outline: none;
+  border: 2px solid #fd7e14;
+}
+.contacts-form hr {
+  margin-bottom: 40px;
+}
+.contacts-form button {
+  border-radius: 20px;
+  padding: 6px 20px;
+  border: none;
+  border-bottom: 2px solid #fd7e14;
+  outline: none;
+  font-weight: bold;
+  font-size: 15px;
+  color: #fd7e14;
+}
+.contacts-form-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 20px;
+}
+.contacts-form-row input {
+  width: 100%;
+  border-radius: 20px;
+  padding: 4px 10px;
+  border: none;
+  border-bottom: 2px solid #fd7e14;
+  outline: none;
+}
+
+.contacts-form-title {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.contacts-card {
+  background-color: #a12c2f;
+  font-weight: bold;
+  color: white;
+  padding: 40px;
+  border-radius: 20px;
+  max-width: 270px;
+  width: 100%;
+  margin: 0 10px;
+}
+.contacts-card a {
+  text-decoration: none;
+  color: white;
+  transition: .4s;
+}
+.contacts-card hr {
+  margin: 30px 0;
+}
+
+.contacts-card-title {
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.contacts-card-data {
+  font-size: 19px;
+}
+
+.footer {
+  text-align: center;
+  color: white;
+  font-size: 17px;
+}
+
+.hr {
+  color: white;
+  margin-bottom: 30px;
+}

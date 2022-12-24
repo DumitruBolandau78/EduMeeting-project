@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meetings</title>
+
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/meetings.css">
+    <link rel="stylesheet" href="../css/media-querie/media_meetings.css">
+
+    <script src="../js/index.js"></script>
+    <link rel="stylesheet" href="../node_modules/animate.css/animate.css">
+    <link rel="stylesheet" href="../css/media-querie/nav_bar.css">
+    <link rel="icon" href="../images/icon/service-icon-03.png">
+    <script src="https://kit.fontawesome.com/f3510151c9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-logo animate__animated animate__fadeInLeft">
+                edu meeting
+            </div>
+            <nav class="header-navigation animate__animated animate__fadeInRight">
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a style="color: #fd7e14;" href="../pages/meetings.html">Meetings</a></li>
+                    <li><a href="../index.html">Aply Now</a></li>
+                    <li class="li-hover" id="li-hover"><a href="#">Pages<i class="fa fa-check"></i></a>
+                        <ul class="drop-items">
+                            <li class="margin0"><a href="../pages/meetings.html">upcoming meetings</a></li>
+                            <li class="margin0"><a href="../pages/meeting_details.html">meeting details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="../index.html">Courses</a></li>
+                    <li><a href="../index.html">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="box">
+        <section class="description-of-page-wrapper">
+            <div class="description-of-page-wrapper-inner">
+                <div class="description-of-page-subtitle">
+                    HERE ARE OUR UPCOMING MEETINGS
+                </div>
+                <div class="description-of-page-title">
+                    UPCOMING MEETINGS
+                </div>
+            </div>
+        </section>
+        <section class="all-meetings-wrapper">
+            <div class="all-meetings-category-choose">
+                <button style="background-color: #a12c2f; color: white;"; id="meetings-category-btn-all" onclick="showAll()" class="wow animate__animated animate__wobble" type="button">all meetings</button>
+                <button id="meetings-category-btn-soon" onclick="showSoon()" class="wow animate__animated animate__wobble" type="button">soon</button>
+                <button id="meetings-category-btn-important" onclick="showImportant()" class="wow animate__animated animate__wobble" type="button">important</button>
+                <button id="meetings-category-btn-attractive" onclick="showAttractive()" class="wow animate__animated animate__wobble" type="button">attractive</button>
+            </div>
+            <div class="all-meetings-cards-wrapper">
+                <div id="soon" class="upcoming-meetings-body-meetings-category-item1 wow animate__animated animate__fadeInLeft">
+                    <div class="upcoming-meetings-body-meetings-category-item-price-and-bg1">
+                        <div class="price">
+                            $22.00
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item-body-wrapper1">
+                        <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date1">
+                            <div class="month">
+                                NOV
+                            </div>
+                            <div class="date">
+                                10
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description1">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title1">
+                                <a href="../pages/meeting_details.html">New Lecturers Meeting</a>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-description1">
+                                Morbi in libero blandit lectus cursus ullamcorper.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="attractive" class="upcoming-meetings-body-meetings-category-item2 wow animate__animated animate__backInDown">
+                    <div class="upcoming-meetings-body-meetings-category-item-price-and-bg2">
+                        <div class="price">
+                            $36.00
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item-body-wrapper2">
+                        <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date2">
+                            <div class="month">
+                                NOV
+                            </div>
+                            <div class="date">
+                                17
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description2">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title2">
+                                <a href="../pages/meeting_details.html">Online Teaching Techniques</a>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-description2">
+                                Morbi in libero blandit lectus cursus ullamcorper.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="important" class="upcoming-meetings-body-meetings-category-item3 wow animate__animated animate__fadeInRight">
+                    <div class="upcoming-meetings-body-meetings-category-item-price-and-bg3">
+                        <div class="price">
+                            $16.00
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item-body-wrapper3">
+                        <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date3">
+                            <div class="month">
+                                NOV
+                            </div>
+                            <div class="date">
+                                25
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description3">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title3">
+                                <a href="../pages/meeting_details.html">Higher Education Conference</a>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-description3">
+                                Morbi in libero blandit lectus cursus ullamcorper.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="soon" class="upcoming-meetings-body-meetings-category-item1 wow animate__animated animate__fadeInLeft">
+                    <div class="upcoming-meetings-body-meetings-category-item-price-and-bg1">
+                        <div class="price">
+                            $22.00
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item-body-wrapper1">
+                        <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date1">
+                            <div class="month">
+                                NOV
+                            </div>
+                            <div class="date">
+                                10
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description1">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title1">
+                                <a href="../pages/meeting_details.html">New Lecturers Meeting</a>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-description1">
+                                Morbi in libero blandit lectus cursus ullamcorper.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="attractive" class="upcoming-meetings-body-meetings-category-item2 wow animate__animated animate__backInDown">
+                    <div class="upcoming-meetings-body-meetings-category-item-price-and-bg2">
+                        <div class="price">
+                            $36.00
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item-body-wrapper2">
+                        <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date2">
+                            <div class="month">
+                                NOV
+                            </div>
+                            <div class="date">
+                                17
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description2">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title2">
+                                <a href="../pages/meeting_details.html">Online Teaching Techniques</a>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-description2">
+                                Morbi in libero blandit lectus cursus ullamcorper.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="important" class="upcoming-meetings-body-meetings-category-item4 wow animate__animated animate__fadeInRight">
+                    <div class="upcoming-meetings-body-meetings-category-item-price-and-bg4">
+                        <div class="price">
+                            $48.00
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item-body-wrapper4">
+                        <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date4">
+                            <div class="month">
+                                NOV
+                            </div>
+                            <div class="date">
+                                28
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description4">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title4">
+                                <a href="../pages/meeting_details.html">Student Training Meetup</a>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-description4">
+                                Morbi in libero blandit lectus cursus ullamcorper.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="important" class="upcoming-meetings-body-meetings-category-item4 wow animate__animated animate__fadeInLeft">
+                    <div class="upcoming-meetings-body-meetings-category-item-price-and-bg4">
+                        <div class="price">
+                            $48.00
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item-body-wrapper4">
+                        <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date4">
+                            <div class="month">
+                                NOV
+                            </div>
+                            <div class="date">
+                                28
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description4">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title4">
+                                <a href="../pages/meeting_details.html">Student Training Meetup</a>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-description4">
+                                Morbi in libero blandit lectus cursus ullamcorper.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="important" class="upcoming-meetings-body-meetings-category-item3 wow animate__animated animate__backInDown">
+                    <div class="upcoming-meetings-body-meetings-category-item-price-and-bg3">
+                        <div class="price">
+                            $16.00
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item-body-wrapper3">
+                        <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date3">
+                            <div class="month">
+                                NOV
+                            </div>
+                            <div class="date">
+                                25
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description3">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title3">
+                                <a href="../pages/meeting_details.html">Higher Education Conference</a>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-description3">
+                                Morbi in libero blandit lectus cursus ullamcorper.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="soon" class="upcoming-meetings-body-meetings-category-item1 wow animate__animated animate__fadeInRight">
+                    <div class="upcoming-meetings-body-meetings-category-item-price-and-bg1">
+                        <div class="price">
+                            $22.00
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item-body-wrapper1">
+                        <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date1">
+                            <div class="month">
+                                NOV
+                            </div>
+                            <div class="date">
+                                10
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description1">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title1">
+                                <a href="../pages/meeting_details.html">New Lecturers Meeting</a>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-description1">
+                                Morbi in libero blandit lectus cursus ullamcorper.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="all-meetings-pagination">
+                <div aria-disabled="true" class="all-meetings-pagination-btn-previous">
+                    <button disabled="true">&#8249;</button>
+                </div>
+                <div class="all-meetings-pagination-btn-first">
+                    <button>1</button>
+                </div>
+                <div class="all-meetings-pagination-btn-second">
+                    <button>2</button>
+                </div>
+                <div class="all-meetings-pagination-btn-third">
+                    <button>3</button>
+                </div>
+                <div class="all-meetings-pagination-btn-next">
+                    <button>&#8250;</button>
+                </div>
+            </div>
+        </section>
+        <hr class="hr">
+        <footer class="footer">
+            &copy; Have Funnn!
+        </footer>
+    </main>
+    <nav class="media-nav" id="media-nav">
+        <i id="color-black" onclick="openCloseNavMedia()" class="fa fa-bars"></i>
+        <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="./meeting.html">Meetings</a></li>
+            <li><a href="../index.html">Aply Now</a></li>
+            <li onclick="dropItems()" class="media-drop-items"><a style="color: #a12c2f;">Pages</a>
+                <ul id="media-drop-items">
+                    <li><a href="./meetings.html">Upcoming meetings</a></li>
+                    <li><a href="./meeting_details.html">Meetings Details</a></li>
+                </ul>
+            </li>
+            <li><a href="../index.html">Courses</a></li>
+            <li><a href="../index.html">Contact Us</a></li>
+        </ul>
+    </nav>
+    <script src="../node_modules/wowjs/dist/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>

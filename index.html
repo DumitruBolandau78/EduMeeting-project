@@ -1,0 +1,890 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edu Meeting</title>
+
+    <link rel="stylesheet" href="./css/homepage.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/media-querie/media_header.css">
+    <link rel="stylesheet" href="./css/media-querie/media_homepage.css">
+
+    <link rel="stylesheet" href="./css/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="./css/animate/animate.css">
+    <link rel="stylesheet" href="./css/media-querie/nav_bar.css">
+    <link rel="stylesheet" href="./css/carousel-multi-items.css">
+
+    <link rel="icon" href="./images/icon/service-icon-03.png">
+    <script src="https://kit.fontawesome.com/f3510151c9.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="header-inner">
+            <div class="header-logo animate__animated animate__fadeInLeft">
+                edu meeting
+            </div>
+            <nav class="header-navigation animate__animated animate__fadeInRight">
+                <ul>
+                    <li><a style="color: #fd7e14;" href="./index.html">Home</a></li>
+                    <li><a href="./pages/meetings.html">Meetings</a></li>
+                    <li><a href="#apply">Aply Now</a></li>
+                    <li class="li-hover" id="li-hover"><a href="#">Pages<i class="fa fa-check"></i></a>
+                        <ul class="drop-items">
+                            <li class="margin0"><a href="./pages/meetings.html">upcoming meetings</a></li>
+                            <li class="margin0"><a href="./pages/meeting_details.html">meeting details</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#contacts">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="box">
+        <section class="welcome">
+            <video autoplay muted loop class="video">
+                <source src="./images/course-video.mp4" type="video/mp4">
+            </video>
+            <div class="welcome-inner">
+                <div class="welcome-subtitle animate__animated animate__fadeInLeft">
+                    HELLO STUDENTS
+                </div>
+                <div class="welcome-title animate__animated animate__fadeInLeft">
+                    WELCOME TO EDUCATION
+                </div>
+                <div class="welcome-desription animate__animated animate__fadeInLeft">
+                    This is an edu meeting HTML CSS template provided by TemplateMo website.<br> It a <a href="https://wowjs.uk/" target="_blank">WOW.js</a> and <a href="https://getbootstrap.com/" target="_blank">BootStrap</a> layout. The video background is taken from Pexels website, a group of young people by Pressmaster.
+                </div>
+                <div class="welcome-btn">
+                    <a href="#contacts">join us now!</a>
+                </div>
+            </div>
+        </section>
+        <section class="carousel-boot-wrapper">
+            <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="carousel-item-inner">
+                            <div class="card">
+                                <img src="./images/service-icon-01.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Online Meeting</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-inner">
+                            <div class="card">
+                                <img src="./images/service-icon-02.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Best Students</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-inner">
+                            <div class="card">
+                                <img src="./images/service-icon-03.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Best Networking</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-inner">
+                            <div class="card">
+                                <img src="./images/service-icon-03.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Best Education</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="carousel-item-inner">
+                            <div class="card">
+                                <img src="./images/service-icon-03.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">Best Teachers</h5>
+                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+            </div>
+        </section>
+        <section class="upcoming-meetings-wrapper">
+            <div class="upcoming-meetings-title wow animate__animated animate__rubberBand">
+                <b class="wow bounceInUp">UPCOMING MEETINGS</b>
+            </div>
+            <hr>
+            <div class="upcoming-meetings-body">
+                <div class="upcoming-meetings-body-category-side wow animate__animated animate__fadeInLeft">
+                    <div class="upcoming-meetings-body-category-side-title">
+                        Meeting Catgories
+                    </div>
+                    <hr>
+                    <div class="upcoming-meetings-body-category-side-item">
+                        <a href="">Sed tempus enim leo</a> 
+                    </div>
+                    <div class="upcoming-meetings-body-category-side-item">
+                        <a href="">Aenean molestie quis</a>
+                    </div>
+                    <div class="upcoming-meetings-body-category-side-item">
+                        <a href="">Cras et metus vestibulum</a>
+                    </div>
+                    <div class="upcoming-meetings-body-category-side-item">
+                        <a href="">Nam et condimentum</a>
+                    </div>
+                    <div class="upcoming-meetings-body-category-side-item">
+                        <a href="">Phasellus nec sapien</a>
+                    </div>
+                    <hr>
+                    <div class="upcoming-meetings-body-category-side-btn">
+                        <a href="./pages/meetings.html">all upcoming Meetings</a>
+                    </div>
+                </div>
+                <div class="upcoming-meetings-body-meetings-category">
+                    <div class="upcoming-meetings-body-meetings-category-item1 wow animate__animated animate__fadeInRight">
+                        <div class="upcoming-meetings-body-meetings-category-item-price-and-bg1">
+                            <div class="price">
+                                $22.00
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-wrapper1">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date1">
+                                <div class="month">
+                                    NOV
+                                </div>
+                                <div class="date">
+                                    10
+                                </div>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description1">
+                                <div class="upcoming-meetings-body-meetings-category-item-body-title1">
+                                    <a href="">New Lecturers Meeting</a>
+                                </div>
+                                <div class="upcoming-meetings-body-meetings-category-item-body-description1">
+                                    Morbi in libero blandit lectus cursus ullamcorper.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item2 wow animate__animated animate__fadeInRight">
+                        <div class="upcoming-meetings-body-meetings-category-item-price-and-bg2">
+                            <div class="price">
+                                $36.00
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-wrapper2">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date2">
+                                <div class="month">
+                                    NOV
+                                </div>
+                                <div class="date">
+                                    17
+                                </div>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description2">
+                                <div class="upcoming-meetings-body-meetings-category-item-body-title2">
+                                    <a href="">Online Teaching Techniques</a>
+                                </div>
+                                <div class="upcoming-meetings-body-meetings-category-item-body-description2">
+                                    Morbi in libero blandit lectus cursus ullamcorper.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item3 wow animate__animated animate__fadeInRight">
+                        <div class="upcoming-meetings-body-meetings-category-item-price-and-bg3">
+                            <div class="price">
+                                $16.00
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-wrapper3">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date3">
+                                <div class="month">
+                                    NOV
+                                </div>
+                                <div class="date">
+                                    25
+                                </div>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description3">
+                                <div class="upcoming-meetings-body-meetings-category-item-body-title3">
+                                    <a href="">Higher Education Conference</a>
+                                </div>
+                                <div class="upcoming-meetings-body-meetings-category-item-body-description3">
+                                    Morbi in libero blandit lectus cursus ullamcorper.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="upcoming-meetings-body-meetings-category-item4 wow animate__animated animate__fadeInRight">
+                        <div class="upcoming-meetings-body-meetings-category-item-price-and-bg4">
+                            <div class="price">
+                                $48.00
+                            </div>
+                        </div>
+                        <div class="upcoming-meetings-body-meetings-category-item-body-wrapper4">
+                            <div class="upcoming-meetings-body-meetings-category-item-body-month-and-date4">
+                                <div class="month">
+                                    NOV
+                                </div>
+                                <div class="date">
+                                    28
+                                </div>
+                            </div>
+                            <div class="upcoming-meetings-body-meetings-category-item-body-title-and-description4">
+                                <div class="upcoming-meetings-body-meetings-category-item-body-title4">
+                                    <a href="">Student Training Meetup</a>
+                                </div>
+                                <div class="upcoming-meetings-body-meetings-category-item-body-description4">
+                                    Morbi in libero blandit lectus cursus ullamcorper.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="apply-wrapper" id="apply">
+            <div class="apply-wrapper-inner">
+                <article class="apply-left-side">
+                    <div class="apply-left-side-apply-for-bachelor-degree wow animate__animated animate__fadeInLeft">
+                        <div class="apply-left-side-apply-for-bachelor-degree-title">
+                            APPLY FOR BACHELOR DEGREE
+                        </div>
+                        <div class="apply-left-side-apply-for-bachelor-degree-text">
+                            You are allowed to use this edu meeting CSS template for your school or university or business. You can feel free to modify or edit this layout.
+                        </div>
+                        <div class="apply-left-side-apply-for-bachelor-degree-btn">
+                            <button onclick="window.location = '#contacts';">Join Us Now!</button>
+                        </div>
+                    </div>
+                    <div class="apply-left-side-apply-for-bachelor-degree wow animate__animated animate__fadeInLeft">
+                        <div class="apply-left-side-apply-for-bachelor-degree-title">
+                            APPLY FOR BACHELOR DEGREE
+                        </div>
+                        <div class="apply-left-side-apply-for-bachelor-degree-text">
+                            You are allowed to use this edu meeting CSS template for your school or university or business. You can feel free to modify or edit this layout.
+                        </div>
+                        <div class="apply-left-side-apply-for-bachelor-degree-btn">
+                            <button onclick="window.location = '#contacts';">Join Us Now!</button>
+                        </div>
+                    </div>
+                </article>
+                <article class="apply-right-side wow animate__animated animate__fadeInRight">
+                    <div class="accordion accordion-flush" id="accordionFlushExample">
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                About Edu Meeting HTML Template
+                            </button>
+                          </h2>
+                          <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">If you want to get the latest collection of HTML CSS templates for your websites, you may visit Too CSS website. If you need a working contact form script, please visit our contact page for more info.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                HTML CSS Bootstrap Layout
+                            </button>
+                          </h2>
+                          <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Etiam posuere metus orci, vel consectetur elit imperdiet eu. Cras ipsum magna, maximus at semper sit amet, eleifend eget neque. Nunc facilisis quam purus, sed vulputate augue interdum vitae. Aliquam a elit massa.<br><br>
+                                Nulla malesuada elit lacus, ac ultricies massa varius sed. Etiam eu metus eget nibh consequat aliquet. Proin fringilla, quam at euismod porttitor, odio odio tempus ligula, ut feugiat ex erat nec mauris. Donec viverra velit eget lectus sollicitudin tincidunt.</div>
+                          </div>
+                        </div>
+                        <div class="accordion-item">
+                          <h2 class="accordion-header" id="flush-headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                Please tell your friends
+                            </button>
+                          </h2>
+                          <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                            <div class="accordion-body">Ut vehicula mauris est, sed sodales justo rhoncus eu. Morbi porttitor quam velit, at ullamcorper justo suscipit sit amet. Quisque at suscipit mi, non efficitur velit.<br><br>
+                                Cras et tortor semper, placerat eros sit amet, porta est. Mauris porttitor sapien et quam volutpat luctus. Nullam sodales ipsum ac neque ultricies varius.</div>
+                          </div>
+                        </div>
+                      </div>
+                </article>
+            </div>
+        </section>
+        <section class="our-popular-courses-wrapper" id="courses">
+            <div class="our-popular-courses-wrapper-title wow animate__animated animate__rollIn">
+                OUR POPULAR COURSES
+            </div>
+            <hr>
+            <div class="row">
+                <div class="MultiCarousel" data-items="1,3,5,6" data-slide="1" id="MultiCarousel"  data-interval="1000">
+                    <div class="MultiCarousel-inner">
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg1"></p>
+                                <p class="title">Java</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg2"></p>
+                                <p class="title">TypeScript</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg3"></p>
+                                <p class="title">SQL</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg4"></p>
+                                <p class="title">BootStrap</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg1"></p>
+                                <p class="title">JQuery.js</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg2"></p>
+                                <p class="title">HTML</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg3"></p>
+                                <p class="title">SCSS</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg4"></p>
+                                <p class="title">SASS</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg1"></p>
+                                <p class="title">Python</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg2"></p>
+                                <p class="title">C++</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg3"></p>
+                                <p class="title">Angular.js</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg4"></p>
+                                <p class="title">WOW.js</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg1"></p>
+                                <p class="title">Vue.js</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg2"></p>
+                                <p class="title">React.js</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg3"></p>
+                                <p class="title">JS</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div class="pad15">
+                                <p class="lead bg4"></p>
+                                <p class="title">LESS</p>
+                                <hr>
+                                <div class="item-stars-and-price">
+                                    <div class="item-stars">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <div class="item-price">
+                                        $170
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary leftLst"><</button>
+                    <button class="btn btn-primary rightLst">></button>
+                </div>
+        </section>
+        <section class="about-university-wrapper">
+            <div class="about-university-wrapper-inner">
+                <div class="about-university-left-side">
+                    <div class="about-university-left-side-title wow animate__animated animate__rollIn">
+                        A Few Facts About Our<br> University
+                    </div>
+                    <div class="about-university-left-side-blocks wow animate__animated animate__fadeInLeft">
+                        <div class="about-university-left-side-block">
+                            <div class="about-university-left-side-block-numbers">
+                                94%
+                            </div>
+                            <div class="about-university-left-side-block-title">
+                                Succesed Students
+                            </div>
+                        </div>
+                        <div class="about-university-left-side-block">
+                            <div class="about-university-left-side-block-numbers">
+                                2343
+                            </div>
+                            <div class="about-university-left-side-block-title">
+                                New Students
+                            </div>
+                        </div>
+                        <div class="about-university-left-side-block">
+                            <div class="about-university-left-side-block-numbers">
+                                126
+                            </div>
+                            <div class="about-university-left-side-block-title">
+                                Current Teachers
+                            </div>
+                        </div>
+                        <div class="about-university-left-side-block">
+                            <div class="about-university-left-side-block-numbers">
+                                32
+                            </div>
+                            <div class="about-university-left-side-block-title">
+                                Awards
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-university-right-side-video wow animate__animated animate__fadeInRight">
+                    <a href="https://www.youtube.com/watch?v=YSz18B2E-88&ab_channel=Tele1Bac%C4%83u" target="_blank">
+                        <img src="./images/univer.webp" alt="university">
+                    </a>
+                    <a href="https://www.youtube.com/watch?v=YSz18B2E-88&ab_channel=Tele1Bac%C4%83u" target="_blank" id="play-video">
+                        <i class="fa fa-play-circle"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="contacts-wrapper">
+            <div class="contacts-form wow animate__animated animate__fadeInLeft">
+                <div class="contacts-form-title">
+                    LET'S GET IN TOUCH
+                </div>
+                <hr>
+                <div class="contacts-form-row">
+                    <div class="contacts-form-col">
+                        <input type="text" placeholder="Your Name*">
+                    </div>
+                    <div class="contacts-form-col">
+                        <input type="email" name="email" id="email" placeholder="Your Email">
+                    </div>
+                    <div class="contacts-form-col">
+                        <input type="text" placeholder="Subject">
+                    </div>
+                </div>
+                <textarea name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <div class="contacts-form-btn">
+                    <button type="submit">SEND MESSAGE NOW</button>
+                </div>
+            </div>
+            <div class="contacts-card wow animate__animated animate__fadeInRight" id="contacts">
+                <div class="contacts-card-title">
+                    Phone Number
+                </div>
+                <div class="contacts-card-data">
+                    <a href="tel:+0100200340">010-020-0340</a>
+                </div>
+                <hr>
+                <div class="contacts-card-title">
+                    Email Address
+                </div>
+                <div class="contacts-card-data">
+                    <a href="mailto:info@meeting.edu">info@meeting.edu</a>
+                </div>
+                <hr>
+                <div class="contacts-card-title">
+                    Street Address
+                </div>
+                <div class="contacts-card-data">
+                    Rio de Janeiro - RJ, 22795-008, Brazil
+                </div>
+                <hr>
+                <div class="contacts-card-title">
+                    Website URL
+                </div>
+                <div class="contacts-card-data">
+                    <a href="https://github.com/DumitruBolandau78">GitHub</a>
+                </div>
+            </div>
+        </section>
+    </main>
+    <hr class="hr">
+    <footer class="footer">
+        &copy; Have Funnn!
+    </footer>
+    <nav class="media-nav" id="media-nav">
+        <i id="color-black" onclick="openCloseNavMedia()" class="fa fa-bars"></i>
+        <ul>
+            <li><a href="./index.html">Home</a></li>
+            <li><a href="../pages/meetings.html">Meetings</a></li>
+            <li><a href="#apply">Aply Now</a></li>
+            <li onclick="dropItems()" class="media-drop-items"><a style="color: #a12c2f;">Pages</a>
+                <ul id="media-drop-items">
+                    <li><a href="./pages/meetings.html">Upcoming meetings</a></li>
+                    <li><a href="./pages/meetings.html">Meetings Details</a></li>
+                </ul>
+            </li>
+            <li><a href="#courses">Courses</a></li>
+            <li><a href="#contacts">Contact Us</a></li>
+        </ul>
+    </nav>
+    <script src="./js/bootstrap/bootstrap.min.js"></script>
+    <script src="./js/wow/wow.min.js"></script>
+    <script src="./js/index.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <script>
+        $(document).ready(function () {
+            var itemsMainDiv = ('.MultiCarousel');
+            var itemsDiv = ('.MultiCarousel-inner');
+            var itemWidth = "";
+        
+            $('.leftLst, .rightLst').click(function () {
+                var condition = $(this).hasClass("leftLst");
+                if (condition)
+                    click(0, this);
+                else
+                    click(1, this)
+            });
+        
+            ResCarouselSize();
+        
+        
+        
+        
+            $(window).resize(function () {
+                ResCarouselSize();
+            });
+        
+            //this function define the size of the items
+            function ResCarouselSize() {
+                var incno = 0;
+                var dataItems = ("data-items");
+                var itemClass = ('.item');
+                var id = 0;
+                var btnParentSb = '';
+                var itemsSplit = '';
+                var sampwidth = $(itemsMainDiv).width();
+                var bodyWidth = $('body').width();
+                $(itemsDiv).each(function () {
+                    id = id + 1;
+                    var itemNumbers = $(this).find(itemClass).length;
+                    btnParentSb = $(this).parent().attr(dataItems);
+                    itemsSplit = btnParentSb.split(',');
+                    $(this).parent().attr("id", "MultiCarousel" + id);
+        
+        
+                    if (bodyWidth >= 1200) {
+                        incno = itemsSplit[3];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else if (bodyWidth >= 992) {
+                        incno = itemsSplit[2];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else if (bodyWidth >= 768) {
+                        incno = itemsSplit[1];
+                        itemWidth = sampwidth / incno;
+                    }
+                    else {
+                        incno = itemsSplit[0];
+                        itemWidth = sampwidth / incno;
+                    }
+                    $(this).css({ 'transform': 'translateX(0px)', 'width': itemWidth * itemNumbers });
+                    $(this).find(itemClass).each(function () {
+                        $(this).outerWidth(itemWidth);
+                    });
+        
+                    $(".leftLst").addClass("over");
+                    $(".rightLst").removeClass("over");
+        
+                });
+            }
+        
+        
+            //this function used to move the items
+            function ResCarousel(e, el, s) {
+                var leftBtn = ('.leftLst');
+                var rightBtn = ('.rightLst');
+                var translateXval = '';
+                var divStyle = $(el + ' ' + itemsDiv).css('transform');
+                var values = divStyle.match(/-?[\d\.]+/g);
+                var xds = Math.abs(values[4]);
+                if (e == 0) {
+                    translateXval = parseInt(xds) - parseInt(itemWidth * s);
+                    $(el + ' ' + rightBtn).removeClass("over");
+        
+                    if (translateXval <= itemWidth / 2) {
+                        translateXval = 0;
+                        $(el + ' ' + leftBtn).addClass("over");
+                    }
+                }
+                else if (e == 1) {
+                    var itemsCondition = $(el).find(itemsDiv).width() - $(el).width();
+                    translateXval = parseInt(xds) + parseInt(itemWidth * s);
+                    $(el + ' ' + leftBtn).removeClass("over");
+        
+                    if (translateXval >= itemsCondition - itemWidth / 2) {
+                        translateXval = itemsCondition;
+                        $(el + ' ' + rightBtn).addClass("over");
+                    }
+                }
+                $(el + ' ' + itemsDiv).css('transform', 'translateX(' + -translateXval + 'px)');
+            }
+        
+            //It is used to get some elements from btn
+            function click(ell, ee) {
+                var Parent = "#" + $(ee).parent().attr("id");
+                var slide = $(Parent).attr("data-slide");
+                ResCarousel(ell, Parent, slide);
+            }
+        
+        });
+    </script>
+</body>
+</html>
